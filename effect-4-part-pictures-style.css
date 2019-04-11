@@ -95,6 +95,8 @@ body {
   top: 200px;
   right: 20px;
   z-index: 99;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
 .four-parts-image:hover {

@@ -6,42 +6,42 @@ body {
 
 .four-parts-image {
   height: 600px;
-	width: 900px;
-	margin: 100px auto;
+  width: 900px;
+  margin: 100px auto;
   background-image: url(img/adult-beautiful-beauty-413727.jpg);
   // background-image: url(img/Alex-Alex.jpg);
   // background-image: url(img/background-calm-clouds-747964.jpg);
-	// background-size: 100% 100%;	// Если картинка сперва есть, а потом исчезает
-	background-size: 0 0;
-	background-position: center center;
-	background-repeat: no-repeat;
+  // background-size: 100% 100%;	// Если картинка сперва есть, а потом исчезает
+  background-size: 0 0;
+  background-position: center center;
+  background-repeat: no-repeat;
   // background-size: cover;
-	position: relative;
-	transition: 0.5s all linear;
+  position: relative;
+  transition: 0.5s all linear;
 	overflow: hidden;
-	// opacity: 0;
- 
-	.four-parts-image__part-1,
-	.four-parts-image__part-2,
-	.four-parts-image__part-3,
-	.four-parts-image__part-4 {
-		transition: all 0.5s linear;
-		transform: translate(0);
-	}
+  // opacity: 0;
+
+  .four-parts-image__part-1,
+  .four-parts-image__part-2,
+  .four-parts-image__part-3,
+  .four-parts-image__part-4 {
+    transition: all 0.5s linear;
+    transform: translate(0);
+  }
 
   .four-parts-image__part-1 {
     height: 200px;
     width: 150px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
     position: absolute;
-		top: 150px;
-		left: 0;
+    top: 150px;
+    left: 0;
     // background-image: url(img/adult-beautiful-beauty-413727.jpg);
     background-image: inherit;
     background-size: 1150px 650px;
     background-position: 0px -150px;
-		z-index: 2;
-		// transform: translateX(-160px);
+    z-index: 2;
+    // transform: translateX(-160px);
   }
 
   .four-parts-image__part-2 {
@@ -54,8 +54,8 @@ body {
     background-image: inherit;
     background-size: 1150px 650px;
     background-position: -100px -70px;
-		z-index: 1;
-		// transform: translateY(-590px);
+    z-index: 1;
+    // transform: translateY(-590px);
   }
 
   .four-parts-image__part-3 {
@@ -69,8 +69,8 @@ body {
     background-image: inherit;
     background-size: 1150px 650px;
     background-position: -300px 0;
-		z-index: 3;
-		// transform: translateY(610px);
+    z-index: 3;
+    // transform: translateY(610px);
   }
 
   .four-parts-image__part-4 {
@@ -83,60 +83,57 @@ body {
     background-image: inherit;
     background-size: 1150px 650px;
     background-position: -500px -20px;
-		z-index: 1;
-		// transform: translateX(410px);
-	}
-	
-	.four-parts-image__text {
-		height: auto;
-		width: auto;
-		border-right: 3px solid white;
-		text-align: right;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 45px;
-		font-weight: 900;
-		text-shadow: 1px 1px 2px black;
-		letter-spacing: 5px;
-		color:  white;
-		position: absolute;
-		top: 200px;
-		right: 20px;
-		z-index: 99;
-		
-	}
+    z-index: 1;
+    // transform: translateX(410px);
+  }
 
-	&:hover{
-		// background-size: 0 0; 	// Если картинка сперва есть, а потом исчезает
-		background-size: 100% 100%;
+  .four-parts-image__text {
+    height: auto;
+    width: auto;
+    border-right: 3px solid white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 5px;
+    color: white;
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    z-index: 99;
+    transform: translateZ(0);
+  }
 
-		// .four-parts-image__part-1,
-		// .four-parts-image__part-4 {			
-		// 	transform: translateX(0);		
-		// }
+  &:hover {
+    // background-size: 0 0; 	// Если картинка сперва есть, а потом исчезает
+    background-size: 100% 100%;
 
-		// .four-parts-image__part-2,
-		// .four-parts-image__part-3 {			
-		// 	transform: translateY(0);
-		// }
-		.four-parts-image__part-1{
-			transform: translateX(-160px);
-			// transform: translateY(500px);
-		}
-		.four-parts-image__part-2{
-			transform: translateY(-590px);
-		}
-		.four-parts-image__part-3{
-			transform: translateY(610px);
-		}
-		.four-parts-image__part-4{
-			transform: translateX(410px);
-			// transform: translateY(-600px);
-				}
+    // .four-parts-image__part-1,
+    // .four-parts-image__part-4 {			
+    // 	transform: translateX(0);		
+    // }
 
-			
+    // .four-parts-image__part-2,
+    // .four-parts-image__part-3 {			
+    // 	transform: translateY(0);
+    // }
+    .four-parts-image__part-1 {
+      transform: translateX(-160px);
+      // transform: translateY(500px);
+    }
 
+    .four-parts-image__part-2 {
+      transform: translateY(-590px);
+    }
 
-	}
+    .four-parts-image__part-3 {
+      transform: translateY(610px);
+    }
 
-
+    .four-parts-image__part-4 {
+      transform: translateX(410px);
+      // transform: translateY(-600px);
+    }
+  }
 }
