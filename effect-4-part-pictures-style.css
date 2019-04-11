@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2f2f2f;
+}
+
+.four-parts-image {
+  height: 600px;
+  width: 900px;
+  background-image: url(img/adult-beautiful-beauty-413727.jpg);
+  background-size: 0 0;
+  position: relative;
+  left: 200px;
+  top: 20px;
+}
+
+.four-parts-image .four-parts-image__part-1 {
+  height: 200px;
+  width: 150px;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 150px;
+  background-image: inherit;
+  background-size: 1150px 650px;
+  background-position: 0px -150px;
+  z-index: 2;
+}
+
+.four-parts-image .four-parts-image__part-2 {
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 80px;
+  left: 100px;
+  background-image: inherit;
+  background-size: 1150px 650px;
+  background-position: -100px -70px;
+  z-index: 1;
+}
+
+.four-parts-image .four-parts-image__part-3 {
+  height: 600px;
+  width: 400px;
+  -webkit-box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 300px;
+  background-image: inherit;
+  background-size: 1150px 650px;
+  background-position: -300px 0;
+  z-index: 3;
+}
+
+.four-parts-image .four-parts-image__part-4 {
+  height: 500px;
+  width: 400px;
+  position: absolute;
+  top: 30px;
+  left: 500px;
+  background-image: inherit;
+  background-size: 1150px 650px;
+  background-position: -500px -20px;
+  z-index: 1;
+}
+
+.four-parts-image .four-parts-image__text {
+  height: auto;
+  width: auto;
+  border-right: 3px solid white;
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 900;
+  text-shadow: 1px 1px 2px black;
+  letter-spacing: 5px;
+  color: white;
+  position: absolute;
+  top: 200px;
+  right: -100px;
+  z-index: 99;
+}
+/*# sourceMappingURL=effect-4-part-pictures-style.css.map */
